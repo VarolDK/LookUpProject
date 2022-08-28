@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.dashboard.DashboardFragment" android:background="@color/mainScreenColor" >
+
+    <TextView
+            android:text="@string/prices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6"
+            android:textColor="@color/white" android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.046"/>
+
+    <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/lightMainScreenColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp" android:layout_marginEnd="10dp"
+            app:layout_constraintHorizontal_bias="0.0">
+    </SearchView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <Button
+                android:id="@+id/dashboardAll"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/all"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="6dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"/>
+
+        <Button
+                android:id="@+id/dashboardSub"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subscribe"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cornerRadius="6dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" app:layout_constraintHorizontal_bias="0.504">
+
+        <TextView
+                android:id="@+id/coinTextView3"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/coin"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        <TextView
+                android:id="@+id/priceTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/price"
+                android:textColor="@color/white"
+                android:textSize="16sp" android:gravity="left"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/dashboardPB"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <LinearLayout
+            android:id="@+id/subsLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0" android:layout_marginBottom="50dp">
+
+        <ScrollView
+                android:id="@+id/scrollviewSubscribed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSubscribed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:background="@color/lightMainScreenColor"/>
+        </ScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/coinLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0" android:visibility="visible" android:layout_marginBottom="50dp">
+
+        <ScrollView
+                android:id="@+id/scrolviewDashview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCoins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightMainScreenColor"
+                    android:visibility="visible"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

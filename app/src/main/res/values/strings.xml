@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">LookUp</string>
+    <string name="title_home">Home</string>
+    <string name="title_coins">Coins</string>
+    <string name="title_profile">Profile</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_again">Password Again</string>
+    <string name="hint_surname">Surname</string>
+    <string name="hint_identity_number">Identity Number</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="button_birthday">Birthday</string>
+    <string name="button_create_account">Create Account</string>
+    <string name="button_login">Login</string>
+    <string name="text_already">Already have an account?</string>
+    <string name="test_personal_info">Personal Information</string>
+    <string name="text_account_info">Account Information</string>
+    <string name="text_create_account">Create Account</string>
+    <string name="button_register">Register</string>
+    <string name="phone_Error">Phone number must be valid</string>
+    <string name="identity_number_valid">Identity number must be 11 character</string>
+    <string name="password_equal">Password does not match</string>
+    <string name="password_valid">Password lengt must be 6 characters</string>
+    <string name="name_valid">Name must be at least 2 character</string>
+    <string name="email_valid">Email must be valid</string>
+    <string name="register_succesfull">Register Successfull</string>
+    <string name="register_failed">Register Failed</string>
+    <string name="user_exist">User is already exist</string>
+    <string name="thereAreNoCoin">There are no subscription</string>
+    <string name="updateEmailError">Error while updating email</string>
+    <string name="updatePasswordError">Error while updating password</string>
+    <string name="hint_old_password">Old Password</string>
+    <string name="dontMatch">Does not match old password</string>
+    <string name="loginFail">Email or Password is wrong</string>
+    <string name="openPositions">Open Positions:</string>
+    <string name="closedPositions">Closed Positions:</string>
+    <string name="totalProfit">Total Profit:</string>
+    <string name="totalCurrentProfit">Total Live Profit:</string>
+    <string name="cannotSelectCoin">Cannot Select over 10 coin</string>
+    <string name="errorWhileData">Error while data update</string>
+    <string name="closed">CLOSED</string>
+    <string name="fearIndex">Fear Index:</string>
+    <string name="buyOpportunity">Buy Opportunity</string>
+    <string name="sellOpportunity">Sell Opportunity</string>
+    <string name="tweetCount">Twitter Analysis</string>
+    <string name="update_success">Password successfully updated</string>
+    <string name="errorResetPassword">Error While Uptade the Password</string>
+    <string name="resetPasswordSuccess">Password Reset Mail Sent</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="send">Send</string>
+    <string name="all">ALL</string>
+    <string name="subscribe">SUBSCRIBE</string>
+    <string name="coin">Coin</string>
+    <string name="price">Price</string>
+    <string name="prices">Prices</string>
+    <string name="nameSurname">Name/Surname</string>
+    <string name="apply">Apply</string>
+    <string name="logout">Logout</string>
+    <string name="updatePassword">Update Password</string>
+    <string name="updateEmail">Update Email</string>
+    <!-- Strings used for fragments for navigation -->
+
+
+</resources>

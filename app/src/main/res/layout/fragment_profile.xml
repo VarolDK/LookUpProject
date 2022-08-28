@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.ProfileFragment" android:background="@color/mainScreenColor">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/linearLayout3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+                android:id="@+id/information_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="@string/test_personal_info"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp" android:paddingStart="10dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+            <TextView
+                    android:text="@string/nameSurname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView8" android:layout_weight="1"
+                    android:textColor="@color/white" android:textSize="16sp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/profileNameSur" android:layout_weight="1"
+                    android:textSize="16sp" android:textColor="@color/white" android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" android:id="@+id/view2"
+                android:background="@color/white" android:layout_marginTop="5dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+            <TextView
+                    android:text="@string/hint_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView11" android:layout_weight="1"
+                    android:textColor="@color/white" android:textSize="16sp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/profileEmail" android:layout_weight="1"
+                    android:textColor="@color/white" android:textSize="16sp" android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" android:id="@+id/view3"
+                android:background="@color/white" android:layout_marginTop="5dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+            <TextView
+                    android:text="@string/hint_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView13" android:layout_weight="1"
+                    android:textColor="@color/white" android:textSize="16sp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/profilePhone" android:layout_weight="1"
+                    android:textColor="@color/white" android:textSize="16sp" android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" android:id="@+id/view4"
+                android:background="@color/white" android:layout_marginTop="5dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+            <TextView
+                    android:text="Birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView15" android:layout_weight="1"
+                    android:textSize="16sp" android:textColor="@color/white"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/profileBirthdate" android:layout_weight="1"
+                    android:textSize="16sp" android:textColor="@color/white" android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" android:id="@+id/view5"
+                android:background="@color/white" android:layout_marginTop="5dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp" android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+            <TextView
+                    android:text="@string/hint_identity_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView17" android:layout_weight="1"
+                    android:textColor="@color/white" android:textSize="16sp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/profileIdentity" android:layout_weight="1"
+                    android:textAlignment="viewEnd" android:textColor="@color/white" android:textSize="16sp"/>
+        </LinearLayout>
+        <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp" android:id="@+id/view6"
+                android:background="@color/white" android:layout_marginTop="5dp"/>
+        <TextView
+                android:text="@string/updateEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView19" android:layout_marginTop="10dp"
+                android:textSize="18sp" android:textColor="@color/white" android:textAlignment="center"/>
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxBackgroundColor="#1A1A45"
+                app:boxStrokeColor="@color/white" app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/hint_email"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="@+id/textView3" app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:id="@+id/profile_email_til" android:layout_marginStart="25dp" android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white" android:id="@+id/profile_update_email"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+                android:text="@string/apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/profile_email_apply"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/turquois"
+                android:layout_gravity="center"/>
+        <TextView
+                android:text="@string/updatePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView20"
+                android:textColor="@color/white" android:textSize="18sp" android:textAlignment="center"
+        />
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxBackgroundColor="#1A1A45"
+                app:boxStrokeColor="@color/white" app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/hint_old_password"
+                app:layout_constraintStart_toStartOf="@+id/email_til"
+                app:layout_constraintEnd_toEndOf="@+id/email_til"
+                app:layout_constraintTop_toBottomOf="@+id/email_til" android:id="@+id/profile_old_password_til"
+                android:layout_marginTop="5dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white" android:id="@+id/profile_old_password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxBackgroundColor="#1A1A45"
+                app:boxStrokeColor="@color/white" app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/hint_password"
+                app:layout_constraintStart_toStartOf="@+id/email_til"
+                app:layout_constraintEnd_toEndOf="@+id/email_til"
+                app:layout_constraintTop_toBottomOf="@+id/email_til" android:id="@+id/profile_password_til"
+                android:layout_marginTop="5dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white" android:id="@+id/profile_password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxBackgroundColor="#1A1A45"
+                app:boxStrokeColor="@color/white" app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/hint_password_again"
+                app:layout_constraintStart_toStartOf="@+id/email_til"
+                app:layout_constraintEnd_toEndOf="@+id/email_til"
+                app:layout_constraintTop_toBottomOf="@+id/email_til" android:id="@+id/profile_password_again_til"
+                android:layout_marginTop="5dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white" android:id="@+id/profile_password_again"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+                android:text="@string/apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/profile_password_apply"
+                android:backgroundTint="@color/turquois"
+                android:layout_gravity="center"/>
+        <Button
+                android:text="@string/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/logoutButton"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:layout_gravity="bottom|right"
+                android:layout_marginEnd="36dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+        />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="@color/mainScreenSecondColor">
+
+    <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/mainScreenColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <ImageView
+            android:id="@+id/signalImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+    <TextView
+            android:id="@+id/signalCoinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/signalImage"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/signalOpenDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/signalCoinName"
+            app:layout_constraintTop_toBottomOf="@+id/signalCoinName"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/signalCloseDate"
+            app:layout_constraintTop_toBottomOf="@+id/signalOpenDate"
+            app:layout_constraintStart_toStartOf="@+id/signalOpenDate" android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp" android:text="TextView"/>
+    <TextView
+            android:id="@+id/signalCoinCurrentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/signalCoinOpenPrice"/>
+
+    <TextView
+            android:id="@+id/signalCoinOpenPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/signalCoinName"
+            app:layout_constraintTop_toTopOf="@+id/signalCoinName"/>
+
+    <TextView
+            android:id="@+id/signalCoinClosePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/signalOpenDate"
+            app:layout_constraintTop_toBottomOf="@+id/signalOpenDate"/>
+
+    <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="-"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/signalCoinOpenPrice"
+            app:layout_constraintTop_toTopOf="@+id/signalCoinOpenPrice"/>
+    <TextView
+            android:text="@string/closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/isClosed"
+            app:layout_constraintStart_toEndOf="@+id/signalCloseDate"
+            app:layout_constraintTop_toTopOf="@+id/signalCloseDate"
+            android:textColor="@color/white" android:visibility="visible" android:layout_marginStart="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
